@@ -63,12 +63,27 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CompanyList\CompanyListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a0a3835-84f2-4e9b-9948-9ebce0ca069f}</SharePointProjectItemId>
+    </None>
+    <None Include="CompanyList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0e13921-aa18-466c-95c9-8fb5563b9276}</SharePointProjectItemId>
+    </None>
+    <None Include="ContactList\ContactListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{564795f1-1817-4c63-80d4-37763c4f1ed3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContactList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b6e18632-38c5-4547-802b-c616f7a4a6af}</SharePointProjectItemId>
+    </None>
     <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9585fb79-53dd-4952-91a9-9bbad4c84213}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{11802d0c-4ccf-43d3-9bf1-059eb92bb1f8}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
@@ -80,10 +95,19 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CompanyList\CompanyListInstance\Elements.xml" />
+    <Content Include="CompanyList\Elements.xml" />
+    <Content Include="CompanyList\Schema.xml" />
+    <Content Include="ContactList\ContactListInstance\Elements.xml" />
+    <Content Include="ContactList\Elements.xml" />
+    <Content Include="ContactList\Schema.xml" />
     <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
     <Content Include="CustomerVisualWebPart\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
       <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

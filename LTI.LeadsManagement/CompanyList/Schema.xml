@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CompanyList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CompanyList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100c36174b78d3c41e6b439bbb0a3477f34" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{1fc9ef73-5d7e-4858-b67d-533c29605fbe}" Name="HKUH" /><FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" /><FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" /><FieldRef ID="{3c822abd-0cbc-4949-97d8-c9eebe7cb2ff}" Name="PostalCode" /><FieldRef ID="{fd72c31b-01b8-49a4-a830-109642b365ac}" Name="Fyuj" /><FieldRef ID="{8478b1a0-579b-416f-bae9-ac63bce80539}" Name="Website" /><FieldRef ID="{52ba1b01-f7d5-476f-87ca-5861254207e6}" Name="Phone" /><FieldRef ID="{9d1cacc8-f452-4bc1-a751-050595ad96e1}" Name="WorkFax" /><FieldRef ID="{eca9fcb6-3ffb-409a-8cba-49f35897a73d}" Name="Email" /><FieldRef ID="{d9c8c333-58fe-4f36-983c-ed715d14fac0}" Name="Stage" /><FieldRef ID="{39638d71-cff8-438f-8f37-c274e94f7efd}" Name="Notes1" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="CompanyName" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="HKUH" ID="{1fc9ef73-5d7e-4858-b67d-533c29605fbe}" DisplayName="Category" Type="Choice" Required="TRUE"><CHOICES><CHOICE>Public</CHOICE><CHOICE>Private</CHOICE><CHOICE>MNC</CHOICE><CHOICE>Government</CHOICE><CHOICE>Education</CHOICE><CHOICE>NGO</CHOICE></CHOICES></Field><Field ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkAddress" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,Address;" Type="Note" NumLines="2" Sortable="FALSE" Required="TRUE" /><Field ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkCity" Group="$Resources:core,Person_Event_Columns;" DisplayName="$Resources:core,City;" Type="Text" Required="TRUE" /><Field Name="PostalCode" ID="{3c822abd-0cbc-4949-97d8-c9eebe7cb2ff}" DisplayName="PostalCode" Type="Text" /><Field Name="Fyuj" ID="{fd72c31b-01b8-49a4-a830-109642b365ac}" DisplayName="State" Type="Choice"><CHOICES><CHOICE>AndhraPradesh</CHOICE><CHOICE>ArunachalPradesh</CHOICE><CHOICE>Assam</CHOICE><CHOICE>Bihar</CHOICE><CHOICE>Chattisgarh</CHOICE><CHOICE>Goa</CHOICE><CHOICE>Gujarat</CHOICE><CHOICE>Haryana</CHOICE><CHOICE>JammuKashmir</CHOICE><CHOICE>Jarkhand</CHOICE><CHOICE>Karnataka</CHOICE><CHOICE>Kerala</CHOICE><CHOICE>MadhyaPradesh</CHOICE><CHOICE>Maharastra</CHOICE><CHOICE>Manipur</CHOICE><CHOICE>Meghalaya</CHOICE><CHOICE>Mizoram</CHOICE><CHOICE>Nagaland</CHOICE><CHOICE>Odissa</CHOICE><CHOICE>punjab</CHOICE><CHOICE>Rajastan</CHOICE><CHOICE>Sikkhim</CHOICE><CHOICE>TamilNadu</CHOICE><CHOICE>Telangana</CHOICE><CHOICE>Tripura</CHOICE><CHOICE>Uttarkhand</CHOICE><CHOICE>UttarPrasdesh</CHOICE><CHOICE>WestBengal</CHOICE></CHOICES></Field><Field Name="Website" ID="{8478b1a0-579b-416f-bae9-ac63bce80539}" DisplayName="Website" Type="URL" Required="TRUE" /><Field Name="Phone" ID="{52ba1b01-f7d5-476f-87ca-5861254207e6}" DisplayName="Phone" Type="Note" Required="TRUE" /><Field ID="{9d1cacc8-f452-4bc1-a751-050595ad96e1}" Name="WorkFax" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="WorkFax" Group="$Resources:core,Person_Event_Columns;" DisplayName="Fax " Type="Text" IMEMode="inactive" /><Field Name="Email" ID="{eca9fcb6-3ffb-409a-8cba-49f35897a73d}" DisplayName="Email" Type="Text" /><Field Name="Stage" ID="{d9c8c333-58fe-4f36-983c-ed715d14fac0}" DisplayName="Stage" Type="Choice"><CHOICES><CHOICE>Fresh</CHOICE><CHOICE>Contacted</CHOICE><CHOICE>Prospect</CHOICE><CHOICE>Disqualified</CHOICE><CHOICE>Won</CHOICE></CHOICES></Field><Field Name="Notes1" ID="{39638d71-cff8-438f-8f37-c274e94f7efd}" DisplayName="Notes" Type="Note" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="HKUH" /><FieldRef Name="WorkAddress" /><FieldRef Name="WorkCity" /><FieldRef Name="PostalCode" /><FieldRef Name="Fyuj" /><FieldRef Name="Website" /><FieldRef Name="Phone" /><FieldRef Name="WorkFax" /><FieldRef Name="Email" /><FieldRef Name="Stage" /><FieldRef Name="Notes1" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
