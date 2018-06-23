@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ContactList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ContactList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01002fe0e6a12af843c3b5cdc56f706b152d" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{90eb7b2b-456e-4322-8b0c-65da46c2969a}" Name="GKH" /><FieldRef ID="{f0c03261-12f3-4a4e-8bc5-6c990d4a4fca}" Name="Title1" /><FieldRef ID="{c1da0519-0487-4a71-95e6-d138cda0bea1}" Name="Email" /><FieldRef ID="{f0b5423d-d246-4ee6-8b1b-923c348c9dfb}" Name="OPhone" /><FieldRef ID="{2a464df1-44c1-4851-949d-fcd270f0ccf2}" Name="CellPhone" /><FieldRef ID="{C814B2CF-84C6-4f56-B4A4-C766938A97C5}" Name="ol_Department" /><FieldRef ID="{2b6c2b1d-7ca4-4c92-bfba-c907ef26869a}" Name="Hjg" /><FieldRef ID="{139c93fd-634f-48ed-8bfc-52f80a762c0a}" Name="LinkedIn" /><FieldRef ID="{218faaef-a182-45ac-a86b-898cbf457326}" Name="Facebook" /><FieldRef ID="{e966e0bb-d83e-41c3-a4e4-306e3104a9a4}" Name="Twitter" /><FieldRef ID="{8eeb4f32-7a47-4ecd-9f95-123710847f55}" Name="Notes1" /><FieldRef ID="{2102c758-3b84-4c80-9379-b2645dcaed8e}" Name="Sthl" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="ContactName" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Name="GKH" ID="{90eb7b2b-456e-4322-8b0c-65da46c2969a}" DisplayName="Company" Type="Lookup" Required="TRUE" List="" /><Field Name="Title1" ID="{f0c03261-12f3-4a4e-8bc5-6c990d4a4fca}" DisplayName="Title" Type="Text" Required="TRUE" /><Field Name="Email" ID="{c1da0519-0487-4a71-95e6-d138cda0bea1}" DisplayName="Email" Type="Text" Required="TRUE" /><Field Name="OPhone" ID="{f0b5423d-d246-4ee6-8b1b-923c348c9dfb}" DisplayName="Phone" Type="Text" /><Field ID="{2a464df1-44c1-4851-949d-fcd270f0ccf2}" Name="CellPhone" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CellPhone" Group="$Resources:core,Person_Event_Columns;" DisplayName="Mobile" Type="Text" IMEMode="inactive" Required="TRUE" /><Field ID="{C814B2CF-84C6-4f56-B4A4-C766938A97C5}" Name="ol_Department" StaticName="ol_Department" SourceID="http://schemas.microsoft.com/sharepoint/v3" DisplayName="$Resources:core,Department_OL;" Group="$Resources:core,Person_Event_Columns;" Type="Text" Sealed="TRUE" AllowDeletion="TRUE" /><Field Name="Hjg" ID="{2b6c2b1d-7ca4-4c92-bfba-c907ef26869a}" DisplayName="Picture" Type="URL" /><Field Name="LinkedIn" ID="{139c93fd-634f-48ed-8bfc-52f80a762c0a}" DisplayName="LinkedIn" Type="URL" Required="TRUE" /><Field Name="Facebook" ID="{218faaef-a182-45ac-a86b-898cbf457326}" DisplayName="Facebook" Type="URL" /><Field Name="Twitter" ID="{e966e0bb-d83e-41c3-a4e4-306e3104a9a4}" DisplayName="Twitter" Type="Text" /><Field Name="Notes1" ID="{8eeb4f32-7a47-4ecd-9f95-123710847f55}" DisplayName="Notes" Type="Note" /><Field Name="Sthl" ID="{2102c758-3b84-4c80-9379-b2645dcaed8e}" DisplayName="Status" Type="Choice"><CHOICES><CHOICE>To Contact</CHOICE><CHOICE>Contacted</CHOICE><CHOICE>Regular</CHOICE></CHOICES></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="GKH" /><FieldRef Name="Title1" /><FieldRef Name="Email" /><FieldRef Name="OPhone" /><FieldRef Name="CellPhone" /><FieldRef Name="ol_Department" /><FieldRef Name="Hjg" /><FieldRef Name="LinkedIn" /><FieldRef Name="Facebook" /><FieldRef Name="Twitter" /><FieldRef Name="Notes1" /><FieldRef Name="Sthl" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
