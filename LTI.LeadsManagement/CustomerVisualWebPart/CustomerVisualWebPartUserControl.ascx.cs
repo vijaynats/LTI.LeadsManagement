@@ -10,5 +10,10 @@ namespace LTI.LeadsManagement.CustomerVisualWebPart
         protected void Page_Load(object sender, EventArgs e)
         {
         }
+
+        protected void Repeater1_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+        }
     }
 }
