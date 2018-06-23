@@ -63,6 +63,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CompanyList\CompanyListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a0a3835-84f2-4e9b-9948-9ebce0ca069f}</SharePointProjectItemId>
+    </None>
+    <None Include="CompanyList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a0e13921-aa18-466c-95c9-8fb5563b9276}</SharePointProjectItemId>
+    </None>
     <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9585fb79-53dd-4952-91a9-9bbad4c84213}</SharePointProjectItemId>
@@ -80,6 +86,9 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CompanyList\CompanyListInstance\Elements.xml" />
+    <Content Include="CompanyList\Elements.xml" />
+    <Content Include="CompanyList\Schema.xml" />
     <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
     <Content Include="CustomerVisualWebPart\Elements.xml" />
     <Content Include="Features\Feature1\Feature1.Template.xml">
