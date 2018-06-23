@@ -16,6 +16,7 @@ namespace LTI.LeadsManagement.CustomerVisualWebPart
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
         }
 
       
@@ -24,6 +25,15 @@ namespace LTI.LeadsManagement.CustomerVisualWebPart
         {
            
             
+        }
+        public void Dropdown()
+        {
+            SPList list = web.Lists["CompanyList"];
+            SPListItemCollection items = list.GetItems();
+           foreach(SPListItem item in items)
+            {
+                Searchby.Items.Add(item["CompanyName"].ToString());
+            }
         }
     }
 }
