@@ -44,15 +44,32 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs" />
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.cs">
+      <DependentUpon>CustomerVisualWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CustomerVisualWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
+    <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9585fb79-53dd-4952-91a9-9bbad4c84213}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
+    </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
       <PackageId>{5f08b5da-2771-48a0-93f5-5265b37d620c}</PackageId>
@@ -61,8 +78,13 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
+    <Content Include="CustomerVisualWebPart\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
