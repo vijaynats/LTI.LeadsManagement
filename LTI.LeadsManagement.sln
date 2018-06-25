@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LTI.LeadsManagement", "LTI.LeadsManagement\LTI.LeadsManagement.csproj", "{A9370525-1D7A-4674-9D7E-E42550037670}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "companycsv", "companycsv\companycsv.csproj", "{B5616746-6497-49EA-B9DC-60707AF838C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{A9370525-1D7A-4674-9D7E-E42550037670}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9370525-1D7A-4674-9D7E-E42550037670}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9370525-1D7A-4674-9D7E-E42550037670}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B5616746-6497-49EA-B9DC-60707AF838C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5616746-6497-49EA-B9DC-60707AF838C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5616746-6497-49EA-B9DC-60707AF838C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5616746-6497-49EA-B9DC-60707AF838C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
