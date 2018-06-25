@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,6 +54,16 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.cs">
+      <DependentUpon>CustomerVisualWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CustomerVisualWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -66,6 +78,10 @@
     </None>
     <None Include="ContactList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ba717975-c2c9-4a4a-9f2b-5a1507f07948}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
+    <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e4fe5c7-8089-4c35-89f9-5a1b18165991}</SharePointProjectItemId>
     </None>
     <None Include="Features\ContactListFeature\ContactListFeature.feature">
       <FeatureId>{3c011d1a-5f81-4929-afba-ea9626285be5}</FeatureId>
@@ -92,6 +108,8 @@
     <Content Include="ContactList\ContactListInstance\Elements.xml" />
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
+    <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
+    <Content Include="CustomerVisualWebPart\Elements.xml" />
     <Content Include="Features\ContactListFeature\ContactListFeature.Template.xml">
       <DependentUpon>ContactListFeature.feature</DependentUpon>
     </Content>
