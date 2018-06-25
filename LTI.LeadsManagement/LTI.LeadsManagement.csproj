@@ -54,15 +54,23 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs">
+    <Compile Include="CompanyWebPart\CustomerVisualWebPart.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.cs">
+    <Compile Include="CompanyWebPart\CustomerVisualWebPartUserControl.ascx.cs">
       <DependentUpon>CustomerVisualWebPartUserControl.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.designer.cs">
+    <Compile Include="CompanyWebPart\CustomerVisualWebPartUserControl.ascx.designer.cs">
       <DependentUpon>CustomerVisualWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactWebpart\ContactWebpart.cs" />
+    <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.cs">
+      <DependentUpon>ContactWebpartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.designer.cs">
+      <DependentUpon>ContactWebpartUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,9 +87,13 @@
     <None Include="ContactList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ba717975-c2c9-4a4a-9f2b-5a1507f07948}</SharePointProjectItemId>
     </None>
-    <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
-    <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
+    <None Include="CompanyWebPart\CustomerVisualWebPart.webpart" />
+    <None Include="CompanyWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8e4fe5c7-8089-4c35-89f9-5a1b18165991}</SharePointProjectItemId>
+    </None>
+    <None Include="ContactWebpart\ContactWebpart.webpart" />
+    <None Include="ContactWebpart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da1c367e-7435-4892-88fb-4f2ff794805e}</SharePointProjectItemId>
     </None>
     <None Include="Features\LTILeadsManagementWebparts\LTILeadsManagementWebparts.feature">
       <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
@@ -105,8 +117,10 @@
     <Content Include="ContactList\ContactListInstance\Elements.xml" />
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
-    <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
-    <Content Include="CustomerVisualWebPart\Elements.xml" />
+    <Content Include="CompanyWebPart\CustomerVisualWebPartUserControl.ascx" />
+    <Content Include="CompanyWebPart\Elements.xml" />
+    <Content Include="ContactWebpart\ContactWebpartUserControl.ascx" />
+    <Content Include="ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
       <DependentUpon>LTILeadsManagementLists.feature</DependentUpon>
     </Content>
