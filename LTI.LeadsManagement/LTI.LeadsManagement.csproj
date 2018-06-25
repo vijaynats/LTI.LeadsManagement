@@ -52,6 +52,8 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyList\companycsv.cs" />
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs" />
     <Compile Include="CompanyDetails.cs" />
     <Compile Include="ContactWebpart\ContactWebpart.cs" />
     <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.cs">
@@ -89,7 +91,7 @@
     </None>
     <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{9585fb79-53dd-4952-91a9-9bbad4c84213}</SharePointProjectItemId>
+      <SharePointProjectItemId>{53b23228-9c1d-42ff-8697-410ed5c60335}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature1\Feature1.feature">
       <FeatureId>{e7f2a034-4079-49cb-956f-1c7128630aa5}</FeatureId>

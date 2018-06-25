@@ -6,10 +6,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.WebControls;
+using System.Net;
+using System.IO;
 
 namespace LTI.LeadsManagement.CustomerVisualWebPart
 {
-    [ToolboxItemAttribute(false)]
+   
     public class CustomerVisualWebPart : WebPart
     {
         // Visual Studio might automatically update this path when you change the Visual Web Part project item.
