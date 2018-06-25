@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -52,15 +54,8 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs" />
-    <Compile Include="CompanyDetails.cs" />
-    <Compile Include="ContactWebpart\ContactWebpart.cs" />
-    <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.cs">
-      <DependentUpon>ContactWebpartUserControl.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.designer.cs">
-      <DependentUpon>ContactWebpartUserControl.ascx.cs</DependentUpon>
+    <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs">
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx.cs">
       <DependentUpon>CustomerVisualWebPartUserControl.ascx</DependentUpon>
@@ -79,23 +74,19 @@
       <SharePointProjectItemId>{a0e13921-aa18-466c-95c9-8fb5563b9276}</SharePointProjectItemId>
     </None>
     <None Include="ContactList\ContactListInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{564795f1-1817-4c63-80d4-37763c4f1ed3}</SharePointProjectItemId>
+      <SharePointProjectItemId>{41898959-ab6e-444d-b8d3-e5ae25d0a595}</SharePointProjectItemId>
     </None>
     <None Include="ContactList\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{b6e18632-38c5-4547-802b-c616f7a4a6af}</SharePointProjectItemId>
-    </None>
-    <None Include="ContactWebpart\ContactWebpart.webpart" />
-    <None Include="ContactWebpart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{988874c8-1c6a-4700-a8ee-0dfec61660e3}</SharePointProjectItemId>
+      <SharePointProjectItemId>{ba717975-c2c9-4a4a-9f2b-5a1507f07948}</SharePointProjectItemId>
     </None>
     <None Include="CustomerVisualWebPart\CustomerVisualWebPart.webpart" />
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{53b23228-9c1d-42ff-8697-410ed5c60335}</SharePointProjectItemId>
+      <SharePointProjectItemId>{8e4fe5c7-8089-4c35-89f9-5a1b18165991}</SharePointProjectItemId>
     </None>
-    <None Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.feature">
-      <FeatureId>{d1256594-817c-41e1-b4ca-ca3c06b9f875}</FeatureId>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{e7f2a034-4079-49cb-956f-1c7128630aa5}</FeatureId>
     </None>
-    <None Include="Features\LeadsWebpart\LeadsWebpart.feature">
+    <None Include="Features\LeadsWebpartFeature\LeadsWebpartFeature.feature">
       <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
     </None>
     <None Include="key.snk" />
@@ -114,15 +105,13 @@
     <Content Include="ContactList\ContactListInstance\Elements.xml" />
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
-    <Content Include="ContactWebpart\ContactWebpartUserControl.ascx" />
-    <Content Include="ContactWebpart\Elements.xml" />
     <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
     <Content Include="CustomerVisualWebPart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
       <DependentUpon>LTILeadsManagementLists.feature</DependentUpon>
     </Content>
-    <Content Include="Features\LeadsWebpart\LeadsWebpart.Template.xml">
-      <DependentUpon>LeadsWebpart.feature</DependentUpon>
+    <Content Include="Features\LeadsWebpartFeature\LeadsWebpartFeature.Template.xml">
+      <DependentUpon>LeadsWebpartFeature.feature</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,39 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.SharePoint;
-using System.Net;
-
+using Microsoft.SharePoint.Client;
 using System.IO;
 
-namespace LTI.LeadsManagement
-{
-   public class companycsv
-    {
-        public static void Main(string[] args)
 
+
+namespace companycsv
+{
+    class Program
+    {
+        static void Main(string[] args)
         {
 
 
-            SPListItem newItem = list.Items.Add();
-
-
-            using (var reader = new StreamReader(@"c:\CompanyListCSV.csv"))
-
+            Console.WriteLine("sales data being imported");
+            ClientContext ctx = new ClientContext("http://leadsmgmt.trg14.int"); //setting that the client is using it
+            using (var reader = new StreamReader(@"c:\CompanyListCSV.csv"))//the file to be imported
             {
-
                 while (!reader.EndOfStream)
-
-
                 {
-
-                    string line = reader.ReadLine();
-
+                    string line = reader.ReadLine();//reading the csv line
                     var cols = line.Split(',');
-
-
-                    newItem = list.Items.Add();
-                    
+                    //Create SP lIst Item
+                    ListItemCreationInformation item = new ListItemCreationInformation();//creating an item
+                    ListItem newItem = ctx.Web.Lists.GetByTitle("CompanyList").AddItem(item);
 
                     newItem["CompanyName"] = cols[0];
 
@@ -64,21 +55,13 @@ namespace LTI.LeadsManagement
 
 
                     newItem.Update();
-
+                    ctx.Load(newItem);
+                    ctx.ExecuteQuery();
+                        
 
                     Console.ReadLine();
-               
-
                 }
-
             }
-
-
         }
     }
 }
-
-    
-
-
-
