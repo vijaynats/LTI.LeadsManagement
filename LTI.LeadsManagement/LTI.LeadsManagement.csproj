@@ -83,8 +83,11 @@
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8e4fe5c7-8089-4c35-89f9-5a1b18165991}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{e7f2a034-4079-49cb-956f-1c7128630aa5}</FeatureId>
+    <None Include="Features\Companylistfeature\Companylistfeature.feature">
+      <FeatureId>{1800b541-eccf-44aa-818b-2d0338a78178}</FeatureId>
+    </None>
+    <None Include="Features\confeature\confeature.feature">
+      <FeatureId>{51fdcd6e-b836-433b-a593-b48c4d2c2ce0}</FeatureId>
     </None>
     <None Include="Features\LeadsWebpartFeature\LeadsWebpartFeature.feature">
       <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
@@ -107,6 +110,12 @@
     <Content Include="ContactList\Schema.xml" />
     <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
     <Content Include="CustomerVisualWebPart\Elements.xml" />
+    <Content Include="Features\Companylistfeature\Companylistfeature.Template.xml">
+      <DependentUpon>Companylistfeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\confeature\confeature.Template.xml">
+      <DependentUpon>confeature.feature</DependentUpon>
+    </Content>
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
       <DependentUpon>LTILeadsManagementLists.feature</DependentUpon>
     </Content>
