@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5f08b5da-2771-48a0-93f5-5265b37d620c" solutionId="5f08b5da-2771-48a0-93f5-5265b37d620c" resetWebServer="false" sharePointProductVersion="15.0" name="LTI.LeadsManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5f08b5da-2771-48a0-93f5-5265b37d620c" solutionId="5f08b5da-2771-48a0-93f5-5265b37d620c" resetWebServer="true" sharePointProductVersion="15.0" name="LTI.LeadsManagement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
+    <featureReference itemId="d1256594-817c-41e1-b4ca-ca3c06b9f875" />
     <featureReference itemId="8f64fcbe-ad5e-4145-9607-b718e95cf3f5" />
-    <featureReference itemId="11802d0c-4ccf-43d3-9bf1-059eb92bb1f8" />
-    <featureReference itemId="e7f2a034-4079-49cb-956f-1c7128630aa5" />
   </features>
 </package>

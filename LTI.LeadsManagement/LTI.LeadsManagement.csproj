@@ -92,14 +92,11 @@
     <None Include="CustomerVisualWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{53b23228-9c1d-42ff-8697-410ed5c60335}</SharePointProjectItemId>
     </None>
-    <None Include="Features\Feature1\Feature1.feature">
-      <FeatureId>{e7f2a034-4079-49cb-956f-1c7128630aa5}</FeatureId>
+    <None Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.feature">
+      <FeatureId>{d1256594-817c-41e1-b4ca-ca3c06b9f875}</FeatureId>
     </None>
     <None Include="Features\LeadsWebpart\LeadsWebpart.feature">
       <FeatureId>{8f64fcbe-ad5e-4145-9607-b718e95cf3f5}</FeatureId>
-    </None>
-    <None Include="Features\LeadsListFeature\LeadsListFeature.feature">
-      <FeatureId>{11802d0c-4ccf-43d3-9bf1-059eb92bb1f8}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
@@ -121,14 +118,11 @@
     <Content Include="ContactWebpart\Elements.xml" />
     <Content Include="CustomerVisualWebPart\CustomerVisualWebPartUserControl.ascx" />
     <Content Include="CustomerVisualWebPart\Elements.xml" />
-    <Content Include="Features\Feature1\Feature1.Template.xml">
-      <DependentUpon>Feature1.feature</DependentUpon>
+    <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
+      <DependentUpon>LTILeadsManagementLists.feature</DependentUpon>
     </Content>
     <Content Include="Features\LeadsWebpart\LeadsWebpart.Template.xml">
       <DependentUpon>LeadsWebpart.feature</DependentUpon>
-    </Content>
-    <Content Include="Features\LeadsListFeature\LeadsListFeature.Template.xml">
-      <DependentUpon>LeadsListFeature.feature</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
