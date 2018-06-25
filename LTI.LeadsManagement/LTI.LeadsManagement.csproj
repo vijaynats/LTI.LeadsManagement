@@ -52,7 +52,6 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompanyList\companycsv.cs" />
     <Compile Include="CustomerVisualWebPart\CustomerVisualWebPart.cs" />
     <Compile Include="CompanyDetails.cs" />
     <Compile Include="ContactWebpart\ContactWebpart.cs" />
