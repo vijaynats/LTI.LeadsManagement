@@ -87,7 +87,7 @@
 <asp:Label ID="Label1" runat="server" Text="Company Search"></asp:Label>
 <p>
     <asp:Label ID="Label2" runat="server" Text="Search By"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label3" runat="server" Text="Sort By:"></asp:Label>
@@ -191,7 +191,7 @@
                     <td class="auto-style14">&nbsp;</td>
                     <td class="auto-style15">&nbsp;</td>
                     <td class="auto-style23">
-                        <asp:Button ID="Button1" runat="server" Text="View Contact" />
+                        <asp:Button ID="viewcontact" runat="server" Text="View Contact" />
                     </td>
                 </tr>
             </table>

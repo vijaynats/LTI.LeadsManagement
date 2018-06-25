@@ -26,14 +26,11 @@ namespace LTI.LeadsManagement.CustomerVisualWebPart
            
             
         }
-        public void Dropdown()
+        
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            SPList list = web.Lists["CompanyList"];
-            SPListItemCollection items = list.GetItems();
-           foreach(SPListItem item in items)
-            {
-                Searchby.Items.Add(item["CompanyName"].ToString());
-            }
+
         }
     }
 }
