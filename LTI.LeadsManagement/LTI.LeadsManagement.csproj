@@ -68,6 +68,7 @@
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyReceiver\CompanyReceiver.cs" />
     <Compile Include="CompanySearchWebPart\CompanySearchWebPart.ascx.cs">
       <DependentUpon>CompanySearchWebPart.ascx</DependentUpon>
     </Compile>
@@ -99,6 +100,9 @@
     </None>
     <None Include="Companies\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{a0e13921-aa18-466c-95c9-8fb5563b9276}</SharePointProjectItemId>
+    </None>
+    <None Include="CompanyReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{369b2f2e-da1d-4e01-860d-22e644b06748}</SharePointProjectItemId>
     </None>
     <None Include="CompanySearchWebPart\CompanySearchWebPart.webpart" />
     <None Include="CompanySearchWebPart\SharePointProjectItem.spdata">
@@ -133,6 +137,7 @@
     <Content Include="Companies\CompaniesListInstance\Elements.xml" />
     <Content Include="Companies\Elements.xml" />
     <Content Include="Companies\Schema.xml" />
+    <Content Include="CompanyReceiver\Elements.xml" />
     <Content Include="CompanySearchWebPart\CompanySearchWebPart.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>CompanySearchWebPart.ascx.g.cs</LastGenOutput>
