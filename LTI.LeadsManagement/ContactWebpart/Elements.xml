@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
   <Module Name="ContactWebpart" List="113" Url="_catalogs/wp">
+    <File Path="ContactWebpart\ContactWebpart.webpart" Url="LTI.LeadsManagement_ContactWebpart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="Leads Management" />
+    </File>
   </Module>
 </Elements>

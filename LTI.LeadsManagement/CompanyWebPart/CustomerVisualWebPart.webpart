@@ -7,8 +7,8 @@
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">LTI.LeadsManagement - CompanyWebPart</property>
-        <property name="Description" type="string">My Visual Web Part</property>
+        <property name="Title" type="string">CompanyWebPart</property>
+        <property name="Description" type="string">Displays the Company Details</property>
       </properties>
     </data>
   </webPart>

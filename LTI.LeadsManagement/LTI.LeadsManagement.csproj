@@ -72,6 +72,9 @@
     <Compile Include="ContactWebpart\ContactWebpartUserControl.ascx.designer.cs">
       <DependentUpon>ContactWebpartUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\Company.cs" />
+    <Compile Include="Model\Contact.cs" />
+    <Compile Include="Model\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -118,7 +121,9 @@
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
     <Content Include="CompanyWebPart\CustomerVisualWebPartUserControl.ascx" />
-    <Content Include="CompanyWebPart\Elements.xml" />
+    <Content Include="CompanyWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ContactWebpart\ContactWebpartUserControl.ascx" />
     <Content Include="ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
