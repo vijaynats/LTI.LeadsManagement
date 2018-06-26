@@ -2,12 +2,12 @@
 <webParts>
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
-      <type name="LTI.LeadsManagement.CustomerVisualWebPart.CustomerVisualWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <type name="LTI.LeadsManagement.CompanySearchWebPart.CompanySearchWebPart, $SharePoint.Project.AssemblyFullName$" />
       <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">LTI.LeadsManagement - CompanyWebPart</property>
+        <property name="Title" type="string">LTI.LeadsManagement - CompanySearchWebPart</property>
         <property name="Description" type="string">My Visual Web Part</property>
       </properties>
     </data>

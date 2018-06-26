@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListDefinition" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
   <Files>
-    <ProjectItemFile Source="Elements.xml" Target="CompanyList\" Type="ElementManifest" />
-    <ProjectItemFile Source="Schema.xml" Target="CompanyList\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="Companies\" Type="ElementManifest" />
+    <ProjectItemFile Source="Schema.xml" Target="Companies\" Type="ElementFile" />
   </Files>
   <ExtensionData>
     <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0100c36174b78d3c41e6b439bbb0a3477f34" />

@@ -9,71 +9,79 @@ using System.Net;
 
 namespace LTI.LeadsManagement.Import
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            
-                Console.WriteLine("sales data being imported");
-           
-                ClientContext ctx = new ClientContext("http://leadsmgmt.trg14.int/");
+            try
+            {
+                string siteUrl = "";
+                string fileName = "";
 
-            Console.WriteLine("check");//setting that the client is using it
-           
-                using (var reader = new StreamReader(@"c:\company.csv"))//the file to be imported
+                Console.WriteLine("** COMPANY DATA IMPORT ***");
+
+                // Accept Site Url
+                do
                 {
+                    Console.Write("Site Url : ");
+                    siteUrl = Console.ReadLine();
+                } while (string.IsNullOrEmpty(siteUrl));
 
-                    while (!reader.EndOfStream)
+                // Accept FileName
+                do
+                {
+                    Console.Write("File Name : ");
+                    fileName = Console.ReadLine();
+                } while (string.IsNullOrEmpty(fileName));
+
+
+                // Connect to SharePoint
+                using (ClientContext ctx = new ClientContext(siteUrl))
+                {
+                    // Check if the File exists
+                    if (!System.IO.File.Exists(fileName))
                     {
-                        string line = reader.ReadLine();//reading the csv line
-                        var cols = line.Split(',');
-                        //Create SP lIst Item
-                        ListItemCreationInformation item = new ListItemCreationInformation();//creating an item
-                        ListItem newItem = ctx.Web.Lists.GetByTitle("CompanyList").AddItem(item);
-
-                        newItem["Title"] = cols[0];
-
-
-                        newItem["category"] = cols[1];
-
-                        newItem["WorkAddress"] = cols[2];
-
-                        newItem["WorkCity"] = cols[3];
-
-                        newItem["PostalCode"] = cols[4];
-
-                        newItem["state"] = cols[5];
-
-                        newItem["Website"] = cols[6];
-
-                        newItem["Phone"] = cols[7];
-
-                        newItem["WorkFax"] = cols[8];
-
-                        newItem["Email"] = cols[9];
-
-                        newItem["Stage"] = cols[10];
-
-
-
-
-
-                        newItem.Update();
-                        ctx.Load(newItem);
-
-                        ctx.ExecuteQuery();
+                        Console.WriteLine("\nFile Not found {0}", fileName);
+                        return;
                     }
 
-                }
-            //}
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            Console.ReadLine();
+                    // Import from the file
+                    using (var reader = new StreamReader(fileName))
+                    {
+                        while (!reader.EndOfStream)
+                        {
+                            string line = reader.ReadLine();
+                            var cols = line.Split(',');
 
+                            // Add a new SP ListItem
+                            ListItemCreationInformation item = new ListItemCreationInformation();//creating an item
+                            ListItem newItem = ctx.Web.Lists.GetByTitle("CompanyList").AddItem(item);
+
+                            newItem["Title"] = cols[0];
+                            newItem["category"] = cols[1];
+                            newItem["WorkAddress"] = cols[2];
+                            newItem["WorkCity"] = cols[3];
+                            newItem["PostalCode"] = cols[4];
+                            newItem["state"] = cols[5];
+                            newItem["Website"] = cols[6];
+                            newItem["Phone"] = cols[7];
+                            newItem["WorkFax"] = cols[8];
+                            newItem["Email"] = cols[9];
+                            newItem["Stage"] = cols[10];
+
+                            newItem.Update();
+                            ctx.Load(newItem);
+
+                            ctx.ExecuteQuery();
+                        }
+                    }
+                }
+
+            } catch(Exception ex)
+            {
+                Console.WriteLine("-- Error During Execution : " + ex.Message);
+                Console.WriteLine(ex.StackTrace);
+            }
         }
     }
-
-
 }
