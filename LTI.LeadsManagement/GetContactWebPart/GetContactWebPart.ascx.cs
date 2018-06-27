@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Web.UI.WebControls.WebParts;
 using LTI.LeadsManagement.Model;
+using System.Net;
 
 
 namespace LTI.LeadsManagement.GetContactWebPart
@@ -9,11 +10,6 @@ namespace LTI.LeadsManagement.GetContactWebPart
     [ToolboxItemAttribute(false)]
     public partial class GetContactWebPart : WebPart
     {
-        // Uncomment the following SecurityPermission attribute only when doing Performance Profiling on a farm solution
-        // using the Instrumentation method, and then remove the SecurityPermission attribute when the code is ready
-        // for production. Because the SecurityPermission attribute bypasses the security check for callers of
-        // your constructor, it's not recommended for production purposes.
-        // [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Assert, UnmanagedCode = true)]
         public GetContactWebPart()
         {
         }
@@ -26,20 +22,33 @@ namespace LTI.LeadsManagement.GetContactWebPart
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ID = Page.Request["cid"];
 
-            CompanyData c = new CompanyData();
+            try
+            {
+                if (!Page.IsPostBack)
+                {
+                    string companyid = Page.Request["cid"];
+                    CompanyData cd = new CompanyData();
+                    Company c = new Company();
+                    c = cd.GetCompanyById(int.Parse(companyid));
+                    Company.Text = c.CompanyName;
 
-            Company l= c.GetCompanyById(Convert.ToInt32(ID));
-
-           Company.Text= l.CompanyName;
+                    this.btnShow_Click(this, null);
+                }
+            }
+            catch (Exception ex)
+            {
+                this.lblError.Text = "Error in webpart : " + ex.Message;
+                    this.lblError.ToolTip = ex.StackTrace;
+            }
         }
 
         protected void btnShow_Click(object sender, EventArgs e)
         {
             ContactData cd = new ContactData();
-            var items = cd.findContacts(Company.Text);
-            this.gvCompanyContacts.DataSource = cd;
+
+            var items = cd.findContacts((Company.Text).ToString());
+            this.gvCompanyContacts.DataSource =items;
             this.gvCompanyContacts.DataBind();
         }
     }

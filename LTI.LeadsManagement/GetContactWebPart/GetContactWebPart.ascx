@@ -16,9 +16,16 @@
 </style>
 <table style="width: 100%;">
     <tr>
+        <td colspan="3">
+            <asp:Label ID="lblError" runat="server"></asp:Label>
+        </td>
+     </tr>
+    <tr>
         <td class="auto-style1">
             Company Contacts
         </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
      </tr>
     <tr>
         <td class="auto-style1">

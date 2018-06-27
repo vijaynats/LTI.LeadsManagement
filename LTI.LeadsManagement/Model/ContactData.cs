@@ -11,16 +11,20 @@ namespace LTI.LeadsManagement.Model
 {
    public  class ContactData
     {
-        public IList<Contact> findContacts(string Company,int i)
+        public IList<Contact> getContactsForCompany(Company c)
+        {
+            return null;
+        }
+        public IList<Contact> getContacts(Company co)
         {
             var list = SPContext.Current.Web.Lists["ContactList"];
             var q = new SPQuery();
             q.Query = string.Format(@"<Where>
                                         <Eq>
-                                        <FieldRef Name='Company' />
-                                        <Value Type='Text'>{0}</Value>
+                                            <FieldRef Name='ID' />
+                                            <Value Type='Text'>{0}</Value>
                                         </Eq>
-                                        </Where>", Company);
+                                      </Where>", co.ID);
 
             var items = list.GetItems(q).AsQueryable();
 
@@ -49,6 +53,7 @@ namespace LTI.LeadsManagement.Model
 
             return results;
         }
+
         public DataTable findContacts(string Company)
         {
             var list = SPContext.Current.Web.Lists["ContactList"];
@@ -60,10 +65,7 @@ namespace LTI.LeadsManagement.Model
                                         </Eq>
                                         </Where>", Company);
 
-            return list.GetItems(q).GetDataTable();
-
-
-            
+            return list.GetItems(q).GetDataTable(); 
         }
     }
 }

@@ -42,7 +42,7 @@
 </table>
 
 <asp:GridView ID="gvcompamysearch" runat="server" AutoGenerateColumns="False" 
-    Height="169px" Width="942px" OnRowCommand="gvcompamysearch_RowCommand" >
+    Height="169px" Width="942px" OnRowCommand="gvcompamysearch_RowCommand" OnSelectedIndexChanged="gvcompamysearch_SelectedIndexChanged" >
     <Columns>
         <asp:BoundField DataField="Title" HeaderText="Company Name" >
         <HeaderStyle Font-Bold="True" />
@@ -66,12 +66,16 @@
         <asp:BoundField DataField="notes" HeaderText="Notes" />
         <asp:TemplateField ItemStyle-HorizontalAlign="Center">
          <ItemTemplate>
-             <asp:LinkButton ID="lnkviewcontact" runat="server" Text="View Contact.." OnClick="lnkviewcontact_Click"
-                                                    CommandArgument='<%# Eval("ID") %>'
-                 PostBackUrl="http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=12"
-                 ></asp:LinkButton>
+             <asp:LinkButton ID="lnkviewcontact" runat="server" Text="View Contact.." OnCommand="lnkviewcontact_Command"
+                                                    CommandArgument='<%# Eval("ID") %>'>
+
+             </asp:LinkButton>
+
           </ItemTemplate>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
          </asp:TemplateField>
+        <asp:BoundField DataField="ID" Visible="False" />
     </Columns>
 </asp:GridView>
 <p>

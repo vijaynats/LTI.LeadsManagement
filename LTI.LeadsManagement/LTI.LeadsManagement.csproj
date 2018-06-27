@@ -87,6 +87,7 @@
     </Compile>
     <Compile Include="Model\CompanyData.cs" />
     <Compile Include="Model\ContactData.cs" />
+    <Compile Include="Model\identity.cs" />
     <Compile Include="pkgobj\ContactWebpart\ContactWebpart.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -112,7 +113,7 @@
       <SharePointProjectItemId>{a0e13921-aa18-466c-95c9-8fb5563b9276}</SharePointProjectItemId>
     </None>
     <None Include="CompanyReceiver\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{369b2f2e-da1d-4e01-860d-22e644b06748}</SharePointProjectItemId>
+      <SharePointProjectItemId>{6d76e94b-fa7a-487c-996b-7f5221d6ed38}</SharePointProjectItemId>
     </None>
     <None Include="CompanySearchWebPart\CompanySearchWebPart.webpart" />
     <None Include="CompanySearchWebPart\SharePointProjectItem.spdata">

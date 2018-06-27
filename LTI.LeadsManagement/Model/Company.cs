@@ -74,5 +74,10 @@ namespace LTI.LeadsManagement.Model
             set;
         }
 
+        //public IList<Contact> AllContacts
+        //{
+        //    get; set;
+        //}
+
     }
 }
