@@ -9,7 +9,7 @@
       <Rows>
         <Row>
           <Field Name="Title">mgrspgroup</Field>
-          <Field Name="KeyValue">Leads Managers</Field>
+          <Field Name="KeyValue">leads Members</Field>
         </Row>
         <Row>
           <Field Name="Title">eremailsubject</Field>

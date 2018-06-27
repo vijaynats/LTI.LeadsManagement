@@ -23,22 +23,43 @@ namespace LTI.LeadsManagement.CompanyReceiver
         public override void ItemAdded(SPItemEventProperties properties)
         {
             base.ItemAdded(properties);      
+
             try
             {
+
+                SPList list = properties.Web.Lists["Companies"];
+                SPListItem item = list.GetItemById(properties.ListItemId);
+                ConfigUtil config = new ConfigUtil(properties.Web);
+
                 Email message = new Email()
                 {
-                    Subject = ConfigUtil.getKeyValue("eremailsubject"),
-                    From = ConfigUtil.getKeyValue("eremailfrom"),
-                    Body = "A New Company is added to the Companies List",
+                    Subject = config.getKeyValue("eremailsubject"),
+                    From = config.getKeyValue("eremailfrom"),
+                    Body = String.Format(@"<div>A New Company is added 
+                                to the Companies List <br/>
+                                Company Name : {0} <br/>
+                                Category : {1} <br/>
+                                Address : {2} <br/>
+                                City : {3} <br/>                              
+                                Phone : {4} <br/>
+                                Stage : {5} <br/>
+                                <div>",
+                                item["CompanyName"].ToString(),
+                                item["Category"].ToString(),
+                                item["Address"].ToString(),
+                                item["City"].ToString(),                              
+                                item["Phone"].ToString(),
+                                item["Stage"].ToString()
+                            )
                 };
 
                 MailUtil mailer = new MailUtil(properties.Site.Url);
-                mailer.sendEmailToGroup(ConfigUtil.getKeyValue("mgrspgroup"), message);
+                mailer.sendEmailToGroup(config.getKeyValue("mgrspgroup"), message);
                 
             }
-            catch 
+            catch(Exception ex)
             {
-                //Console.WriteLine("Please Specify atleast one recepient"+ex.Message);
+                string details = ex.Message;
             }
 
         }
