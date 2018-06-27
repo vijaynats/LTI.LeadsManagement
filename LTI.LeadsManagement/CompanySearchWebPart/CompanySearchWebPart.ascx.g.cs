@@ -57,7 +57,7 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "15.0.0.0")]
-        protected global::System.Web.UI.WebControls.GridView compamysearch;
+        protected global::System.Web.UI.WebControls.GridView gvcompamysearch;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebPartCodeGenerator", "15.0.0.0")]
         public static implicit operator global::System.Web.UI.TemplateControl(CompanySearchWebPart target) 
@@ -326,8 +326,174 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
         private global::System.Web.UI.WebControls.BoundField @__BuildControl__control20() {
             global::System.Web.UI.WebControls.BoundField @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.BoundField();
-            @__ctrl.DataField = "Address";
+            @__ctrl.DataField = "WorkAddress";
             @__ctrl.HeaderText = "Address";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private void @__BuildControl__control22(System.Web.UI.WebControls.TableItemStyle @__ctrl) {
+            @__ctrl.Font.Bold = true;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control21() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "WorkCity";
+            @__ctrl.HeaderText = "City";
+            this.@__BuildControl__control22(@__ctrl.HeaderStyle);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private void @__BuildControl__control24(System.Web.UI.WebControls.TableItemStyle @__ctrl) {
+            @__ctrl.Font.Bold = true;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control23() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "PostalCode";
+            @__ctrl.HeaderText = "Postal Code";
+            this.@__BuildControl__control24(@__ctrl.HeaderStyle);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control25() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "state";
+            @__ctrl.HeaderText = "State";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control26() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "Website";
+            @__ctrl.HeaderText = "WebSite";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control27() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "Phone";
+            @__ctrl.HeaderText = "Phone";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control28() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "WorkFax";
+            @__ctrl.HeaderText = "WorkFax";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control29() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "Email";
+            @__ctrl.HeaderText = "Email";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control30() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "stage";
+            @__ctrl.HeaderText = "Stage";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control31() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "notes";
+            @__ctrl.HeaderText = "Notes";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.LinkButton @__BuildControl__control34() {
+            global::System.Web.UI.WebControls.LinkButton @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.LinkButton();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "lnkviewcontact";
+            @__ctrl.Text = "View Contact..";
+            @__ctrl.PostBackUrl = "http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=12";
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control34);
+            @__ctrl.Click -= new System.EventHandler(this.lnkviewcontact_Click);
+            @__ctrl.Click += new System.EventHandler(this.lnkviewcontact_Click);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        public void @__DataBinding__control34(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.LinkButton dataBindingExpressionBuilderTarget;
+            System.Web.UI.IDataItemContainer Container;
+            dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.LinkButton)(sender));
+            Container = ((System.Web.UI.IDataItemContainer)(dataBindingExpressionBuilderTarget.BindingContainer));
+            dataBindingExpressionBuilderTarget.CommandArgument = global::System.Convert.ToString( Eval("ID") , global::System.Globalization.CultureInfo.CurrentCulture);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private void @__BuildControl__control33(System.Web.UI.Control @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n             "));
+            global::System.Web.UI.WebControls.LinkButton @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control34();
+            @__parser.AddParsedSubObject(@__ctrl1);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n          "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.TemplateField @__BuildControl__control32() {
+            global::System.Web.UI.WebControls.TemplateField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TemplateField();
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledBindableTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control33), null);
+            @__ctrl.ItemStyle.HorizontalAlign = global::System.Web.UI.WebControls.HorizontalAlign.Center;
             return @__ctrl;
         }
         
@@ -344,21 +510,53 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             global::System.Web.UI.WebControls.BoundField @__ctrl3;
             @__ctrl3 = this.@__BuildControl__control20();
             @__ctrl.Add(@__ctrl3);
+            global::System.Web.UI.WebControls.BoundField @__ctrl4;
+            @__ctrl4 = this.@__BuildControl__control21();
+            @__ctrl.Add(@__ctrl4);
+            global::System.Web.UI.WebControls.BoundField @__ctrl5;
+            @__ctrl5 = this.@__BuildControl__control23();
+            @__ctrl.Add(@__ctrl5);
+            global::System.Web.UI.WebControls.BoundField @__ctrl6;
+            @__ctrl6 = this.@__BuildControl__control25();
+            @__ctrl.Add(@__ctrl6);
+            global::System.Web.UI.WebControls.BoundField @__ctrl7;
+            @__ctrl7 = this.@__BuildControl__control26();
+            @__ctrl.Add(@__ctrl7);
+            global::System.Web.UI.WebControls.BoundField @__ctrl8;
+            @__ctrl8 = this.@__BuildControl__control27();
+            @__ctrl.Add(@__ctrl8);
+            global::System.Web.UI.WebControls.BoundField @__ctrl9;
+            @__ctrl9 = this.@__BuildControl__control28();
+            @__ctrl.Add(@__ctrl9);
+            global::System.Web.UI.WebControls.BoundField @__ctrl10;
+            @__ctrl10 = this.@__BuildControl__control29();
+            @__ctrl.Add(@__ctrl10);
+            global::System.Web.UI.WebControls.BoundField @__ctrl11;
+            @__ctrl11 = this.@__BuildControl__control30();
+            @__ctrl.Add(@__ctrl11);
+            global::System.Web.UI.WebControls.BoundField @__ctrl12;
+            @__ctrl12 = this.@__BuildControl__control31();
+            @__ctrl.Add(@__ctrl12);
+            global::System.Web.UI.WebControls.TemplateField @__ctrl13;
+            @__ctrl13 = this.@__BuildControl__control32();
+            @__ctrl.Add(@__ctrl13);
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "15.0.0.0")]
-        private global::System.Web.UI.WebControls.GridView @__BuildControlcompamysearch() {
+        private global::System.Web.UI.WebControls.GridView @__BuildControlgvcompamysearch() {
             global::System.Web.UI.WebControls.GridView @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.GridView();
-            this.compamysearch = @__ctrl;
+            this.gvcompamysearch = @__ctrl;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
-            @__ctrl.ID = "compamysearch";
+            @__ctrl.ID = "gvcompamysearch";
             @__ctrl.AutoGenerateColumns = false;
             @__ctrl.Height = new System.Web.UI.WebControls.Unit(169D, global::System.Web.UI.WebControls.UnitType.Pixel);
             @__ctrl.Width = new System.Web.UI.WebControls.Unit(942D, global::System.Web.UI.WebControls.UnitType.Pixel);
             this.@__BuildControl__control15(@__ctrl.Columns);
+            @__ctrl.RowCommand -= new System.Web.UI.WebControls.GridViewCommandEventHandler(this.gvcompamysearch_RowCommand);
+            @__ctrl.RowCommand += new System.Web.UI.WebControls.GridViewCommandEventHandler(this.gvcompamysearch_RowCommand);
             return @__ctrl;
         }
         
@@ -387,7 +585,7 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n    </tr>\r\n</table>\r\n\r\n"));
             global::System.Web.UI.WebControls.GridView @__ctrl5;
-            @__ctrl5 = this.@__BuildControlcompamysearch();
+            @__ctrl5 = this.@__BuildControlgvcompamysearch();
             @__parser.AddParsedSubObject(@__ctrl5);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n<p>\r\n    &nbsp;</p>\r\n\r\n"));
         }

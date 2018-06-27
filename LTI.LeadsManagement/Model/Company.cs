@@ -63,7 +63,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
-        public string Stage
+        public ContactStages Stage
         {
             get;
             set;

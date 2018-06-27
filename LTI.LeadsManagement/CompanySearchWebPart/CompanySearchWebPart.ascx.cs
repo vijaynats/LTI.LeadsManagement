@@ -24,7 +24,6 @@ namespace LTI.LeadsManagement.CompanySearchWebPart
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void search_Click(object sender, EventArgs e)
@@ -33,8 +32,19 @@ namespace LTI.LeadsManagement.CompanySearchWebPart
 
             var items = cd.findCompany(this.ddlColumns.SelectedValue, this.txtKeyword.Text);
 
-            this.compamysearch.DataSource = items;
-            this.compamysearch.DataBind();
+            this.gvcompamysearch.DataSource = items;
+            this.gvcompamysearch.DataBind();
+        }
+
+        protected void lnkviewcontact_Click(object sender, EventArgs e)
+        {
+            CompanyData cd = new CompanyData();
+
+        }
+
+        protected void gvcompamysearch_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
+        {
+
         }
     }
 }

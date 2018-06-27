@@ -77,6 +77,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CompanySearchWebPart.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GetContactWebPart\GetContactWebPart.ascx.cs">
+      <DependentUpon>GetContactWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GetContactWebPart\GetContactWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetContactWebPart.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Model\CompanyData.cs" />
     <Compile Include="Model\ContactData.cs" />
     <Compile Include="pkgobj\ContactWebpart\ContactWebpart.cs">
@@ -94,7 +102,6 @@
     <Compile Include="Model\Email.cs" />
     <Compile Include="Model\Enums.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\ConfigUtil.cs" />
     <Compile Include="Util\MailUtil.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +129,9 @@
     </None>
     <None Include="LeadsConfig\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9d55e346-51c6-405e-aba8-cb65d4f48d00}</SharePointProjectItemId>
+    <None Include="GetContactWebPart\GetContactWebPart.webpart" />
+    <None Include="GetContactWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf0450b8-5302-478e-b93f-55d2a41070c0}</SharePointProjectItemId>
     </None>
     <None Include="pkgobj\ContactWebpart\ContactWebpart.webpart" />
     <None Include="pkgobj\ContactWebpart\SharePointProjectItem.spdata">
@@ -155,9 +165,13 @@
     <Content Include="ContactList\ContactListInstance\Elements.xml" />
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
-    <Content Include="LeadsConfig\Elements.xml" />
-    <Content Include="LeadsConfig\LeadsConfigInstance\Elements.xml" />
-    <Content Include="LeadsConfig\Schema.xml" />
+    <Content Include="GetContactWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GetContactWebPart\GetContactWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>GetContactWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
     <Content Include="pkgobj\ContactWebpart\ContactWebpartUserControl.ascx" />
     <Content Include="pkgobj\ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">

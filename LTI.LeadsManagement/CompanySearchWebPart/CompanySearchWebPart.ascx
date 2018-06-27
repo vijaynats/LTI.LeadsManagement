@@ -41,7 +41,8 @@
     </tr>
 </table>
 
-<asp:GridView ID="compamysearch" runat="server" AutoGenerateColumns="False" Height="169px" Width="942px">
+<asp:GridView ID="gvcompamysearch" runat="server" AutoGenerateColumns="False" 
+    Height="169px" Width="942px" OnRowCommand="gvcompamysearch_RowCommand" >
     <Columns>
         <asp:BoundField DataField="Title" HeaderText="Company Name" >
         <HeaderStyle Font-Bold="True" />
@@ -49,7 +50,28 @@
         <asp:BoundField DataField="Category" HeaderText="Category">
         <HeaderStyle Font-Bold="True" />
         </asp:BoundField>
-        <asp:BoundField DataField="Address" HeaderText="Address" />
+        <asp:BoundField DataField="WorkAddress" HeaderText="Address" />
+        <asp:BoundField DataField="WorkCity" HeaderText="City">
+        <HeaderStyle Font-Bold="True" />
+        </asp:BoundField>
+        <asp:BoundField DataField="PostalCode" HeaderText="Postal Code">
+        <HeaderStyle Font-Bold="True" />
+        </asp:BoundField>
+        <asp:BoundField DataField="state" HeaderText="State" />
+        <asp:BoundField DataField="Website" HeaderText="WebSite" />
+        <asp:BoundField DataField="Phone" HeaderText="Phone" />
+        <asp:BoundField DataField="WorkFax" HeaderText="WorkFax" />
+        <asp:BoundField DataField="Email" HeaderText="Email" />
+        <asp:BoundField DataField="stage" HeaderText="Stage" />
+        <asp:BoundField DataField="notes" HeaderText="Notes" />
+        <asp:TemplateField ItemStyle-HorizontalAlign="Center">
+         <ItemTemplate>
+             <asp:LinkButton ID="lnkviewcontact" runat="server" Text="View Contact.." OnClick="lnkviewcontact_Click"
+                                                    CommandArgument='<%# Eval("ID") %>'
+                 PostBackUrl="http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=12"
+                 ></asp:LinkButton>
+          </ItemTemplate>
+         </asp:TemplateField>
     </Columns>
 </asp:GridView>
 <p>
