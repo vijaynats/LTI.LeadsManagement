@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="LeadsConfig" 
+                OnQuickLaunch="TRUE" 
+                TemplateType="10003" 
+                Url="Lists/LeadsConfig" 
+                Description="Configuration Information for this Project">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">mgrspgroup</Field>
+          <Field Name="KeyValue">Leads Managers</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">eremailsubject</Field>
+          <Field Name="KeyValue">** NEW COMPANY CREATED **</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">eremailfrom</Field>
+          <Field Name="KeyValue">admin@trg10.int</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>
