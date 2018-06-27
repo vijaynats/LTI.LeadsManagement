@@ -9,12 +9,14 @@ namespace LTI.LeadsManagement.Util
 {
     public class ConfigUtil
     {
-        public ConfigUtil()
+        private SPWeb web;
+
+        public ConfigUtil(SPWeb web)
         {
-        
+            this.web = web;  
         }
 
-        public static string getKeyValue(string key)
+        public string getKeyValue(string key)
         {
             SPQuery q = new SPQuery();
             q.Query = String.Format(@" <Where>
@@ -24,15 +26,17 @@ namespace LTI.LeadsManagement.Util
                                               </Eq>
                                            </Where>", key);
 
-            return getKeyValue("q");
+            var pairs = this.web.Lists["LeadsConfig"].GetItems(q);
+
+            if(pairs.Count > 0)
+            {
+                string value = pairs[0]["KeyValue"].ToString();
+
+                return value;
+            }
+
+            return "";
         }
-        
-       
-
-
-
     }
-    
-
 }
 

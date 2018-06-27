@@ -5,8 +5,8 @@
     <projectItemReference itemId="a0e13921-aa18-466c-95c9-8fb5563b9276" />
     <projectItemReference itemId="41898959-ab6e-444d-b8d3-e5ae25d0a595" />
     <projectItemReference itemId="ba717975-c2c9-4a4a-9f2b-5a1507f07948" />
-    <projectItemReference itemId="369b2f2e-da1d-4e01-860d-22e644b06748" />
-    <projectItemReference itemId="08818ab3-8c4a-4175-99a1-2ea6cd969567" />
-    <projectItemReference itemId="8e2fe65f-9012-49ad-878b-f9229e6bc48a" />
+    <projectItemReference itemId="571fea4d-375e-4bc2-8463-b048c2ae88d6" />
+    <projectItemReference itemId="9d55e346-51c6-405e-aba8-cb65d4f48d00" />
+    <projectItemReference itemId="2da0b73e-e57c-4a44-8acb-e8f45adc8b69" />
   </projectItems>
 </feature>
