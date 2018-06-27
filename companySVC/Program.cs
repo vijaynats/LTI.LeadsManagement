@@ -27,7 +27,7 @@ namespace LTI.LeadsManagement.Import
                     siteUrl = Console.ReadLine();
                 } while (string.IsNullOrEmpty(siteUrl));
 
-                // Accept FileName
+               // Accept FileName
                 do
                 {
                     Console.Write("File Name : ");
@@ -38,7 +38,7 @@ namespace LTI.LeadsManagement.Import
                 // Connect to SharePoint
                 using (ClientContext ctx = new ClientContext(siteUrl))
                 {
-                    // Check if the File exists
+                    //Check if the File exists
                     if (!System.IO.File.Exists(fileName))
                     {
                         Console.WriteLine("\nFile Not found {0}", fileName);
@@ -55,7 +55,7 @@ namespace LTI.LeadsManagement.Import
 
                             // Add a new SP ListItem
                             ListItemCreationInformation item = new ListItemCreationInformation();//creating an item
-                            ListItem newItem = ctx.Web.Lists.GetByTitle("CompanyList").AddItem(item);
+                            ListItem newItem = ctx.Web.Lists.GetByTitle("Companies").AddItem(item);
 
                             newItem["Title"] = cols[0];
                             newItem["category"] = cols[1];

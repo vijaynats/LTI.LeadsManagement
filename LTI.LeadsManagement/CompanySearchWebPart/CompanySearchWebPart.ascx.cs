@@ -1,17 +1,17 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 using System.Web.UI.WebControls.WebParts;
+using LTI.LeadsManagement.Model;
+using System.Data;
 
 namespace LTI.LeadsManagement.CompanySearchWebPart
 {
     [ToolboxItemAttribute(false)]
     public partial class CompanySearchWebPart : WebPart
     {
-        // Uncomment the following SecurityPermission attribute only when doing Performance Profiling on a farm solution
-        // using the Instrumentation method, and then remove the SecurityPermission attribute when the code is ready
-        // for production. Because the SecurityPermission attribute bypasses the security check for callers of
-        // your constructor, it's not recommended for production purposes.
-        // [System.Security.Permissions.SecurityPermission(System.Security.Permissions.SecurityAction.Assert, UnmanagedCode = true)]
         public CompanySearchWebPart()
         {
         }
@@ -24,6 +24,17 @@ namespace LTI.LeadsManagement.CompanySearchWebPart
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void search_Click(object sender, EventArgs e)
+        {
+            CompanyData cd = new CompanyData();
+
+            var items = cd.findCompany(this.ddlColumns.SelectedValue, this.txtKeyword.Text);
+
+            this.compamysearch.DataSource = items;
+            this.compamysearch.DataBind();
         }
     }
 }

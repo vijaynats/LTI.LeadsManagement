@@ -33,6 +33,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         /// Designation of the Contact Person
         /// </summary>
@@ -41,6 +42,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         ///  Email Url Of the Contact Person
         /// </summary>
@@ -49,6 +51,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         ///PhoneNo of the Contact Person
         /// </summary>
@@ -57,6 +60,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         /// MobileNo of the Contact Person
         /// </summary>
@@ -65,6 +69,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         ///Department Name of the Contact Person
         /// </summary>
@@ -73,6 +78,7 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         /// Image Url Of the Contact Person 
         /// </summary>
@@ -81,32 +87,36 @@ namespace LTI.LeadsManagement.Model
             get;
             set;
         }
+
         /// <summary>
         ///LinkedIn Url Of the Contact Person
         /// </summary>
-        public string LinkedIn
+        public string LinkedInUrl
         {
             get;
             set;
         }
+
         /// <summary>
         ///Facebook Url oF the Contact Person
         /// </summary>
-        public string Facebook
+        public string FacebookUrl
         {
             get;
             set;
         }
+
         /// <summary>
         /// Twitter Id of the Contact Person
         /// </summary>
-        public string Twitter
+        public string TwitterUrl 
         {
             get;
             set;
         }
+
         /// <summary>
-        ///  Description of the Contact Person
+        ///  Notes about Contact
         /// </summary>
         public string Notes
         {
@@ -115,7 +125,7 @@ namespace LTI.LeadsManagement.Model
         }
 
         /// <summary>
-        /// Status of the Contact
+        /// Contact Status
         /// </summary>
         public ContactStatus Status
         {

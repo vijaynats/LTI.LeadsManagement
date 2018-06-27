@@ -13,4 +13,12 @@ namespace LTI.LeadsManagement.Model
         Regular = 3
     }
 
+    public enum ContactStages
+    {
+        Fresh = 1,
+        Contacted = 2,
+        Prospect = 3,
+        Disqualified = 4,
+        Won = 5
+    }
 }
