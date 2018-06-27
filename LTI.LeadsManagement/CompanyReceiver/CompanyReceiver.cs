@@ -22,24 +22,23 @@ namespace LTI.LeadsManagement.CompanyReceiver
         /// </summary>
         public override void ItemAdded(SPItemEventProperties properties)
         {
-            base.ItemAdded(properties);
-
+            base.ItemAdded(properties);      
             try
             {
                 Email message = new Email()
                 {
-                    Subject="New Comapany Added",
-                    From ="admin@trg10.int",
-                    Body="A New Company is added to the Companies List",
+                    Subject = ConfigUtil.getKeyValue("eremailsubject"),
+                    From = ConfigUtil.getKeyValue("eremailfrom"),
+                    Body = "A New Company is added to the Companies List",
                 };
 
                 MailUtil mailer = new MailUtil(properties.Site.Url);
-                mailer.sendEmailToGroup("leads Visitors", message);
+                mailer.sendEmailToGroup(ConfigUtil.getKeyValue("mgrspgroup"), message);
                 
             }
-            catch(Exception ex)
+            catch 
             {
-                Console.WriteLine("Please Specify atleast one recepient"+ex.Message);
+                //Console.WriteLine("Please Specify atleast one recepient"+ex.Message);
             }
 
         }
