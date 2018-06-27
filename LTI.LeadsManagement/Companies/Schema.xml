@@ -1,15 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<List xmlns:ows="Microsoft SharePoint" 
-      Title="Companies" 
-      FolderCreation="FALSE" 
-      Direction="$Resources:Direction;" 
-      Url="Lists/Companies" 
-      BaseType="0" 
-      xmlns="http://schemas.microsoft.com/sharepoint/">
+<List xmlns:ows="Microsoft SharePoint" Title="Companies" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Companies" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
   <MetaData>
     <ContentTypes>
-      <ContentType ID="0x0100c36174b78d3c41e6b439bbb0a3477f34" 
-                   Name="ListFieldsContentType">
+      <ContentType ID="0x0100c36174b78d3c41e6b439bbb0a3477f34" Name="ListFieldsContentType">
         <FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{1fc9ef73-5d7e-4858-b67d-533c29605fbe}" Name="category" /><FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" Name="WorkAddress" /><FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" Name="WorkCity" /><FieldRef ID="{3c822abd-0cbc-4949-97d8-c9eebe7cb2ff}" Name="PostalCode" /><FieldRef ID="{fd72c31b-01b8-49a4-a830-109642b365ac}" Name="state" /><FieldRef ID="{8478b1a0-579b-416f-bae9-ac63bce80539}" Name="Website" /><FieldRef ID="{52ba1b01-f7d5-476f-87ca-5861254207e6}" Name="Phone" /><FieldRef ID="{9d1cacc8-f452-4bc1-a751-050595ad96e1}" Name="WorkFax" /><FieldRef ID="{eca9fcb6-3ffb-409a-8cba-49f35897a73d}" Name="Email" /><FieldRef ID="{d9c8c333-58fe-4f36-983c-ed715d14fac0}" Name="Stage" /><FieldRef ID="{39638d71-cff8-438f-8f37-c274e94f7efd}" Name="notes" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
       </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>

@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Web.UI.WebControls.WebParts;
 using LTI.LeadsManagement.Model;
 using System.Data;
+using System.Net;
+
 
 namespace LTI.LeadsManagement.CompanySearchWebPart
 {
@@ -38,13 +40,28 @@ namespace LTI.LeadsManagement.CompanySearchWebPart
 
         protected void lnkviewcontact_Click(object sender, EventArgs e)
         {
-            CompanyData cd = new CompanyData();
-
+          
+            
         }
 
         protected void gvcompamysearch_RowCommand(object sender, System.Web.UI.WebControls.GridViewCommandEventArgs e)
         {
+            
+        }
 
+        protected void gvcompamysearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void lnkviewcontact_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+            Page.Response.Redirect("http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=" + e.CommandArgument.ToString());
         }
     }
 }

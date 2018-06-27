@@ -41,6 +41,10 @@ namespace LTI.LeadsManagement.GetContactWebPart {
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "15.0.0.0")]
+        protected global::System.Web.UI.WebControls.Label lblError;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
         protected global::System.Web.UI.WebControls.TextBox Company;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
@@ -55,6 +59,18 @@ namespace LTI.LeadsManagement.GetContactWebPart {
         public static implicit operator global::System.Web.UI.TemplateControl(GetContactWebPart target) 
         {
             return target == null ? null : target.TemplateControl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.Label @__BuildControllblError() {
+            global::System.Web.UI.WebControls.Label @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Label();
+            this.lblError = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "lblError";
+            return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -291,20 +307,21 @@ namespace LTI.LeadsManagement.GetContactWebPart {
             "artCodeGenerator", "15.0.0.0")]
         private void @__BuildControlTree(global::LTI.LeadsManagement.GetContactWebPart.GetContactWebPart @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n<style type=\"text/css\">\r\n    .auto-style1 {\r\n        width: 187px;\r\n    }\r\n    " +
+                        ".auto-style2 {\r\n        width: 229px;\r\n    }\r\n</style>\r\n<table style=\"width: 100" +
+                        "%;\">\r\n    <tr>\r\n        <td colspan=\"3\">\r\n            "));
+            global::System.Web.UI.WebControls.Label @__ctrl1;
+            @__ctrl1 = this.@__BuildControllblError();
+            @__parser.AddParsedSubObject(@__ctrl1);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
-<style type=""text/css"">
-    .auto-style1 {
-        width: 187px;
-    }
-    .auto-style2 {
-        width: 229px;
-    }
-</style>
-<table style=""width: 100%;"">
+        </td>
+     </tr>
     <tr>
         <td class=""auto-style1"">
             Company Contacts
         </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
      </tr>
     <tr>
         <td class=""auto-style1"">
@@ -312,17 +329,17 @@ namespace LTI.LeadsManagement.GetContactWebPart {
         </td>
         <td class=""auto-style2"">
             "));
-            global::System.Web.UI.WebControls.TextBox @__ctrl1;
-            @__ctrl1 = this.@__BuildControlCompany();
-            @__parser.AddParsedSubObject(@__ctrl1);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td> \r\n            "));
-            global::System.Web.UI.WebControls.Button @__ctrl2;
-            @__ctrl2 = this.@__BuildControlbtnShow();
+            global::System.Web.UI.WebControls.TextBox @__ctrl2;
+            @__ctrl2 = this.@__BuildControlCompany();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n    </tr>\r\n </table>\r\n"));
-            global::System.Web.UI.WebControls.GridView @__ctrl3;
-            @__ctrl3 = this.@__BuildControlgvCompanyContacts();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n        <td> \r\n            "));
+            global::System.Web.UI.WebControls.Button @__ctrl3;
+            @__ctrl3 = this.@__BuildControlbtnShow();
             @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n        </td>\r\n    </tr>\r\n </table>\r\n"));
+            global::System.Web.UI.WebControls.GridView @__ctrl4;
+            @__ctrl4 = this.@__BuildControlgvCompanyContacts();
+            @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n"));
         }
         

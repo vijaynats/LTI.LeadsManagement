@@ -456,10 +456,9 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "lnkviewcontact";
             @__ctrl.Text = "View Contact..";
-            @__ctrl.PostBackUrl = "http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=12";
             @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control34);
-            @__ctrl.Click -= new System.EventHandler(this.lnkviewcontact_Click);
-            @__ctrl.Click += new System.EventHandler(this.lnkviewcontact_Click);
+            @__ctrl.Command -= new System.Web.UI.WebControls.CommandEventHandler(this.lnkviewcontact_Command);
+            @__ctrl.Command += new System.Web.UI.WebControls.CommandEventHandler(this.lnkviewcontact_Command);
             return @__ctrl;
         }
         
@@ -483,7 +482,14 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             global::System.Web.UI.WebControls.LinkButton @__ctrl1;
             @__ctrl1 = this.@__BuildControl__control34();
             @__parser.AddParsedSubObject(@__ctrl1);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n          "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n          "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private void @__BuildControl__control35(System.Web.UI.WebControls.TableItemStyle @__ctrl) {
+            @__ctrl.HorizontalAlign = global::System.Web.UI.WebControls.HorizontalAlign.Center;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -494,6 +500,18 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             @__ctrl = new global::System.Web.UI.WebControls.TemplateField();
             @__ctrl.ItemTemplate = new System.Web.UI.CompiledBindableTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control33), null);
             @__ctrl.ItemStyle.HorizontalAlign = global::System.Web.UI.WebControls.HorizontalAlign.Center;
+            this.@__BuildControl__control35(@__ctrl.ItemStyle);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "15.0.0.0")]
+        private global::System.Web.UI.WebControls.BoundField @__BuildControl__control36() {
+            global::System.Web.UI.WebControls.BoundField @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.BoundField();
+            @__ctrl.DataField = "ID";
+            @__ctrl.Visible = false;
             return @__ctrl;
         }
         
@@ -540,6 +558,9 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             global::System.Web.UI.WebControls.TemplateField @__ctrl13;
             @__ctrl13 = this.@__BuildControl__control32();
             @__ctrl.Add(@__ctrl13);
+            global::System.Web.UI.WebControls.BoundField @__ctrl14;
+            @__ctrl14 = this.@__BuildControl__control36();
+            @__ctrl.Add(@__ctrl14);
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -557,6 +578,8 @@ namespace LTI.LeadsManagement.CompanySearchWebPart {
             this.@__BuildControl__control15(@__ctrl.Columns);
             @__ctrl.RowCommand -= new System.Web.UI.WebControls.GridViewCommandEventHandler(this.gvcompamysearch_RowCommand);
             @__ctrl.RowCommand += new System.Web.UI.WebControls.GridViewCommandEventHandler(this.gvcompamysearch_RowCommand);
+            @__ctrl.SelectedIndexChanged -= new System.EventHandler(this.gvcompamysearch_SelectedIndexChanged);
+            @__ctrl.SelectedIndexChanged += new System.EventHandler(this.gvcompamysearch_SelectedIndexChanged);
             return @__ctrl;
         }
         

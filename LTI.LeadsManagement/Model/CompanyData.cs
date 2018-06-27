@@ -23,20 +23,20 @@ namespace LTI.LeadsManagement.Model
             var c = SPContext.Current.Web.Lists["Companies"].GetItemById(id);   
                  return new Company()
                  {
-                    ID=Convert.ToInt32(c["ID"]),
-                    CompanyName=c["CompanyName"].ToString(),
-                    Category=c["Category"].ToString(),
-                     Address=c["Address"].ToString(),
-                      City=c["City"].ToString(),
-                      PostalCode=c["PostalCode"].ToString(),
-                      State=c["State"].ToString(),
-                      Website=c["Website"].ToString(),
-                      Phone=c[" Phone"].ToString(),
-                      Fax=c["Fax"].ToString(),
-                      Email=c["Email"].ToString(),
-                      Stage=(ContactStages)c["Stage"],
-                      Notes=c["Notes"].ToString()
-                };
+                     //ID=Convert.ToInt32(c["ID"]),
+                     CompanyName = c["Title"].ToString(),
+                     //Category=c["Category"].ToString(),
+                     //Address=c["Address"].ToString(),
+                     //City=c["City"].ToString(),
+                     //PostalCode=c["PostalCode"].ToString(),
+                     //State=c["State"].ToString(),
+                     //Website=c["Website"].ToString(),
+                     //Phone=c["Phone"].ToString(),
+                     //Fax=c["Fax"].ToString(),
+                     //Email=c["Email"].ToString(),
+                     //Stage=(ContactStages)c["Stage"],
+                     //Notes=c["Notes"].ToString(),
+                 };
         }
 
         public IList<Company> getAllCompanies(int rowLimit)
