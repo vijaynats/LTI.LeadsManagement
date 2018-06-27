@@ -15,8 +15,10 @@ namespace LTI.LeadsManagement.CompanyReceiver
     /// </summary>
     public class CompanyReceiver : SPItemEventReceiver
     {
+        
         /// <summary>
-        /// An item was added.
+        /// Sends an Email to a designated SharePoint group
+        /// after New Company is added
         /// </summary>
         public override void ItemAdded(SPItemEventProperties properties)
         {
@@ -28,16 +30,18 @@ namespace LTI.LeadsManagement.CompanyReceiver
                 {
                     Subject="New Comapany Added",
                     From ="admin@trg10.int",
-                    Body="A New Company is added to the Sales Manger Group",
+                    Body="A New Company is added to the Companies List",
                 };
 
                 MailUtil mailer = new MailUtil(properties.Site.Url);
-                mailer.sendEmailToGroup("Sales Manager", message);
+                mailer.sendEmailToGroup("leads Visitors", message);
+                
             }
-            catch { }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Please Specify atleast one recepient"+ex.Message);
+            }
 
         }
-
-
     }
 }
