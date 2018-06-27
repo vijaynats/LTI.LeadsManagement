@@ -5,12 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using LTI.LeadsManagement.Model;
 using Microsoft.SharePoint;
+using System.Data;
 
 namespace LTI.LeadsManagement.Model
 {
    public  class ContactData
     {
-        public IList<Contact> findContacts(string Company)
+        public IList<Contact> findContacts(string Company,int i)
         {
             var list = SPContext.Current.Web.Lists["ContactList"];
             var q = new SPQuery();
@@ -47,6 +48,22 @@ namespace LTI.LeadsManagement.Model
             }
 
             return results;
+        }
+        public DataTable findContacts(string Company)
+        {
+            var list = SPContext.Current.Web.Lists["ContactList"];
+            var q = new SPQuery();
+            q.Query = string.Format(@"<Where>
+                                        <Eq>
+                                        <FieldRef Name='Company' />
+                                        <Value Type='Text'>{0}</Value>
+                                        </Eq>
+                                        </Where>", Company);
+
+            return list.GetItems(q).GetDataTable();
+
+
+            
         }
     }
 }

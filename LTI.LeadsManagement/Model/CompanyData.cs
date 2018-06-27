@@ -34,7 +34,7 @@ namespace LTI.LeadsManagement.Model
                       Phone=c[" Phone"].ToString(),
                       Fax=c["Fax"].ToString(),
                       Email=c["Email"].ToString(),
-                      Stage=c["Stage"].ToString(),
+                      Stage=(ContactStages)c["Stage"],
                       Notes=c["Notes"].ToString()
                 };
         }
@@ -65,7 +65,7 @@ namespace LTI.LeadsManagement.Model
                     Phone = item[" Phone"].ToString(),
                     Fax = item["Fax"].ToString(),
                     Email = item["Email"].ToString(),
-                    Stage = item["Stage"].ToString(),
+                    Stage = (ContactStages)item["Stage"],
                     Notes = item["Notes"].ToString()
                 };
             }
@@ -197,7 +197,7 @@ namespace LTI.LeadsManagement.Model
                     Phone = item[" Phone"].ToString(),
                     Fax = item["Fax"].ToString(),
                     Email = item["Email"].ToString(),
-                    Stage = item["Stage"].ToString(),
+                    Stage = (ContactStages)item["Stage"],
                     Notes = item["Notes"].ToString()
                 };
             }

@@ -77,6 +77,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CompanySearchWebPart.ascx</DependentUpon>
     </Compile>
+    <Compile Include="GetContactWebPart\GetContactWebPart.ascx.cs">
+      <DependentUpon>GetContactWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GetContactWebPart\GetContactWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetContactWebPart.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Model\CompanyData.cs" />
     <Compile Include="Model\ContactData.cs" />
     <Compile Include="pkgobj\ContactWebpart\ContactWebpart.cs">
@@ -116,6 +124,10 @@
     <None Include="ContactList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ba717975-c2c9-4a4a-9f2b-5a1507f07948}</SharePointProjectItemId>
     </None>
+    <None Include="GetContactWebPart\GetContactWebPart.webpart" />
+    <None Include="GetContactWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cf0450b8-5302-478e-b93f-55d2a41070c0}</SharePointProjectItemId>
+    </None>
     <None Include="pkgobj\ContactWebpart\ContactWebpart.webpart" />
     <None Include="pkgobj\ContactWebpart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4aea5aec-2c42-478f-b600-c8f01dd410dc}</SharePointProjectItemId>
@@ -148,6 +160,13 @@
     <Content Include="ContactList\ContactListInstance\Elements.xml" />
     <Content Include="ContactList\Elements.xml" />
     <Content Include="ContactList\Schema.xml" />
+    <Content Include="GetContactWebPart\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="GetContactWebPart\GetContactWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>GetContactWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
     <Content Include="pkgobj\ContactWebpart\ContactWebpartUserControl.ascx" />
     <Content Include="pkgobj\ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
