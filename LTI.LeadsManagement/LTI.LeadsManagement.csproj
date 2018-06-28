@@ -126,6 +126,12 @@
     <None Include="ContactList\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{ba717975-c2c9-4a4a-9f2b-5a1507f07948}</SharePointProjectItemId>
     </None>
+    <None Include="LeadsConfig\LeadsConfigInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2da0b73e-e57c-4a44-8acb-e8f45adc8b69}</SharePointProjectItemId>
+    </None>
+    <None Include="LeadsConfig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9d55e346-51c6-405e-aba8-cb65d4f48d00}</SharePointProjectItemId>
+    </None>
     <None Include="GetContactWebPart\GetContactWebPart.webpart" />
     <None Include="GetContactWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{cf0450b8-5302-478e-b93f-55d2a41070c0}</SharePointProjectItemId>
