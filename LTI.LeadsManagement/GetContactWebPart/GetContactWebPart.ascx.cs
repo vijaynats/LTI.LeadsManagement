@@ -46,8 +46,8 @@ namespace LTI.LeadsManagement.GetContactWebPart
         protected void btnShow_Click(object sender, EventArgs e)
         {
             ContactData cd = new ContactData();
-
-            var items = cd.findContacts((Company.Text).ToString());
+            string companyid = Page.Request["cid"];
+            var items = cd.findContacts(Convert.ToInt32(companyid));
             this.gvCompanyContacts.DataSource =items;
             this.gvCompanyContacts.DataBind();
         }

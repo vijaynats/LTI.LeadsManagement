@@ -37,7 +37,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           
-        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="company" /><FieldRef Name="Title1" /><FieldRef Name="Email" /><FieldRef Name="OPhone" /><FieldRef Name="CellPhone" /><FieldRef Name="ol_Department" /><FieldRef Name="pic" /><FieldRef Name="LinkedIn" /><FieldRef Name="Facebook" /><FieldRef Name="Twitter" /><FieldRef Name="Notes1" /><FieldRef Name="status" /></ViewFields>
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Title1" /><FieldRef Name="Email" /><FieldRef Name="OPhone" /><FieldRef Name="CellPhone" /><FieldRef Name="ol_Department" /><FieldRef Name="pic" /><FieldRef Name="LinkedIn" /><FieldRef Name="Facebook" /><FieldRef Name="Twitter" /><FieldRef Name="Notes1" /><FieldRef Name="status" /><FieldRef Name="company" /></ViewFields>
         <Query>
           <OrderBy>
             

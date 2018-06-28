@@ -54,16 +54,16 @@ namespace LTI.LeadsManagement.Model
             return results;
         }
 
-        public DataTable findContacts(string Company)
+        public DataTable findContacts(int id)
         {
             var list = SPContext.Current.Web.Lists["ContactList"];
             var q = new SPQuery();
             q.Query = string.Format(@"<Where>
                                         <Eq>
-                                        <FieldRef Name='Company' />
-                                        <Value Type='Text'>{0}</Value>
+                                        <FieldRef Name='Company_x003a_ID' />
+                                        <Value Type='Lookup'>{0}</Value>
                                         </Eq>
-                                        </Where>", Company);
+                                        </Where>", id);
 
             return list.GetItems(q).GetDataTable(); 
         }
