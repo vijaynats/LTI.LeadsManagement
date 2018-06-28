@@ -61,7 +61,7 @@ namespace LTI.LeadsManagement.CompanySearchWebPart
 
         protected void lnkviewcontact_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
         {
-            Page.Response.Redirect("http://leadsmgmt.trg14.int/SitePages/GetContacts.aspx?cid=" + e.CommandArgument.ToString());
+            Page.Response.Redirect("http://leads.trg10.int/SitePages/Contact.aspx?cid=" + e.CommandArgument.ToString());
         }
     }
 }

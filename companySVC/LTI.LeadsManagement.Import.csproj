@@ -79,11 +79,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\companySVC.exe.config" />
+    <None Include="obj\Debug\companySVC.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\LTI.LeadsManagement.Import.csproj.CopyComplete" />
+    <None Include="obj\Debug\LTI.LeadsManagement.Import.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\LTI.LeadsManagement.Import.csprojAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LTI.LeadsManagement\LTI.LeadsManagement.csproj">
@@ -97,6 +107,96 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\companySVC.exe" />
+    <Content Include="bin\Debug\companySVC.pdb" />
+    <Content Include="bin\Debug\de\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\de\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\de\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\es\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\fr\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\it\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\it\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\ja\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\ko\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\LTI.LeadsManagement.dll" />
+    <Content Include="bin\Debug\LTI.LeadsManagement.pdb" />
+    <Content Include="bin\Debug\Microsoft.AnalysisServices.AdomdClient.dll" />
+    <Content Include="bin\Debug\Microsoft.BusinessData.dll" />
+    <Content Include="bin\Debug\Microsoft.BusinessData.xml" />
+    <Content Include="bin\Debug\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Edm.xml" />
+    <Content Include="bin\Debug\Microsoft.Data.OData.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.OData.xml" />
+    <Content Include="bin\Debug\Microsoft.IdentityModel.Extensions.dll" />
+    <Content Include="bin\Debug\Microsoft.mshtml.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.DocumentManagement.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.DocumentManagement.xml" />
+    <Content Include="bin\Debug\Microsoft.Office.Excel.Server.Udf.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Excel.Server.WebServices.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.SecureStoreService.Server.Security.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.Search.Applications.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.Search.Connector.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.Search.Connector.xml" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.Search.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.Search.xml" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.UserProfiles.dll" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.UserProfiles.xml" />
+    <Content Include="bin\Debug\Microsoft.Office.Server.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.Runtime.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.Runtime.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.ServerRuntime.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.UserProfiles.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Client.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Linq.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Linq.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Portal.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Portal.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Publishing.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Publishing.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Search.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Search.Extended.Administration.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Search.Extended.Administration.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Search.Extended.Administration.ResourceStorage.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Search.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Security.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Security.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Taxonomy.dll" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.Taxonomy.xml" />
+    <Content Include="bin\Debug\Microsoft.SharePoint.xml" />
+    <Content Include="bin\Debug\Microsoft.Web.Administration.dll" />
+    <Content Include="bin\Debug\Microsoft.Web.CommandUI.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\ru\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\System.Spatial.dll" />
+    <Content Include="bin\Debug\System.Spatial.xml" />
+    <Content Include="bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\zh-Hans\System.Spatial.resources.dll" />
+    <Content Include="bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\Debug\zh-Hant\System.Spatial.resources.dll" />
+    <Content Include="obj\Debug\companySVC.exe" />
+    <Content Include="obj\Debug\companySVC.pdb" />
+    <Content Include="obj\Debug\LTI.LeadsManagement.Import.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

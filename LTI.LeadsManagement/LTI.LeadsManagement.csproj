@@ -88,6 +88,9 @@
     <Compile Include="Model\CompanyData.cs" />
     <Compile Include="Model\ContactData.cs" />
     <Compile Include="Model\identity.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="pkgobj\ContactWebpart\ContactWebpart.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -136,6 +139,13 @@
     <None Include="GetContactWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{cf0450b8-5302-478e-b93f-55d2a41070c0}</SharePointProjectItemId>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\LTI.LeadsManagement.csproj.CopyComplete" />
+    <None Include="obj\Debug\LTI.LeadsManagement.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\LTI.LeadsManagement.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\LTI.LeadsManagement.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\LTI.LeadsManagement.csprojAssemblyReference.cache" />
     <None Include="pkgobj\ContactWebpart\ContactWebpart.webpart" />
     <None Include="pkgobj\ContactWebpart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{4aea5aec-2c42-478f-b600-c8f01dd410dc}</SharePointProjectItemId>
@@ -153,9 +163,15 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementWebparts\CompanySearchWebPart\CompanySearchWebPart.webpart" />
+    <None Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementWebparts\GetContactWebPart\GetContactWebPart.webpart" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\LTI.LeadsManagement.dll" />
+    <Content Include="bin\Debug\LTI.LeadsManagement.pdb" />
     <Content Include="Companies\CompaniesListInstance\Elements.xml" />
     <Content Include="Companies\Elements.xml" />
     <Content Include="Companies\Schema.xml" />
@@ -175,6 +191,17 @@
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>GetContactWebPart.ascx.g.cs</LastGenOutput>
     </Content>
+    <Content Include="LeadsConfig\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="LeadsConfig\LeadsConfigInstance\Elements.xml" />
+    <Content Include="LeadsConfig\Schema.xml" />
+    <Content Include="obj\Debug\LTI.LeadsManagement.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\LTI.LeadsManagement.csproj.PackageFileList.txt" />
+    <Content Include="obj\Debug\LTI.LeadsManagement.dll" />
+    <Content Include="obj\Debug\LTI.LeadsManagement.pdb" />
+    <Content Include="obj\Debug\TempPE\CompanySearchWebPart.CompanySearchWebPart.ascx.g.cs.dll" />
+    <Content Include="obj\Debug\TempPE\GetContactWebPart.GetContactWebPart.ascx.g.cs.dll" />
     <Content Include="pkgobj\ContactWebpart\ContactWebpartUserControl.ascx" />
     <Content Include="pkgobj\ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
@@ -183,6 +210,21 @@
     <Content Include="Features\LTILeadsManagementWebparts\LTILeadsManagementWebparts.Template.xml">
       <DependentUpon>LTILeadsManagementWebparts.feature</DependentUpon>
     </Content>
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement.dll" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\CompaniesListInstance\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\Companies\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\Companies\Schema.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\ContactListInstance\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\ContactList\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\ContactList\Schema.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\Feature.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\LeadsConfigInstance\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\LeadsConfig\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementLists\LeadsConfig\Schema.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementWebparts\CompanySearchWebPart\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementWebparts\Feature.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\LTI.LeadsManagement_LTILeadsManagementWebparts\GetContactWebPart\Elements.xml" />
+    <Content Include="pkg\Debug\LTI.LeadsManagement\manifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
