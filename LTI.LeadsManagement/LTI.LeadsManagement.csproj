@@ -139,6 +139,12 @@
     <None Include="GetContactWebPart\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{cf0450b8-5302-478e-b93f-55d2a41070c0}</SharePointProjectItemId>
     </None>
+    <None Include="LeadsConfig\LeadsConfigInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d7df3d3e-0853-4879-bb95-10a5e13fd47f}</SharePointProjectItemId>
+    </None>
+    <None Include="LeadsConfig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{824ef188-a599-48e8-adec-90864ac4effa}</SharePointProjectItemId>
+    </None>
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\LTI.LeadsManagement.csproj.CopyComplete" />
@@ -191,17 +197,6 @@
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>GetContactWebPart.ascx.g.cs</LastGenOutput>
     </Content>
-    <Content Include="LeadsConfig\Elements.xml">
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="LeadsConfig\LeadsConfigInstance\Elements.xml" />
-    <Content Include="LeadsConfig\Schema.xml" />
-    <Content Include="obj\Debug\LTI.LeadsManagement.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\LTI.LeadsManagement.csproj.PackageFileList.txt" />
-    <Content Include="obj\Debug\LTI.LeadsManagement.dll" />
-    <Content Include="obj\Debug\LTI.LeadsManagement.pdb" />
-    <Content Include="obj\Debug\TempPE\CompanySearchWebPart.CompanySearchWebPart.ascx.g.cs.dll" />
-    <Content Include="obj\Debug\TempPE\GetContactWebPart.GetContactWebPart.ascx.g.cs.dll" />
     <Content Include="pkgobj\ContactWebpart\ContactWebpartUserControl.ascx" />
     <Content Include="pkgobj\ContactWebpart\Elements.xml" />
     <Content Include="Features\LTILeadsManagementLists\LTILeadsManagementLists.Template.xml">
